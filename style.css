@@ -1,0 +1,191 @@
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: #020631;
+  font: 14px 'Nunito', sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+}
+.today{
+  font-size: 22px;
+}
+
+.container {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list {
+  margin: 25px 0;
+}
+
+ul {
+  list-style-type: none; 
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  position: relative;
+  word-break: break-word;
+} 
+
+.has-feedback .fa {
+  line-height: 40px;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  display: block;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+.has-feedback .fa:hover {
+  color: rgb(65, 230, 128);
+}
+
+.add-control {
+  margin-top: 20px;
+  position: relative;
+}
+.add-control .form-control {
+  padding-right: 25px;
+}
+.add-control .refresh {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  font-size: 14px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  margin-right: -10px;
+  cursor: pointer;
+  color: #9da1af;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+.add-control .refresh:hover {
+  color: #666;
+}
+.form-control,
+.form-control:focus,
+.form-control:active,
+.form-control:active:focus {
+  border: none;
+  padding: 20px 15px;
+  outline: none;
+}
+.form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.form-control:focus {
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+          box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.today{
+  text-align: center;
+  color: #fff;
+}
+
+
+.logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -50px;
+}
+
+.h4, h4 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 240px;
+}
+
+.h5 , h5{
+  font-size: 15px;
+}
+
+
+@media (max-width: 768px){
+.col-xs-offset-3 {
+    margin-left: 10%;
+}
+}
+
+@media (max-width: 768px){
+.col-xs-6 {
+  width: 80%;
+}
+}
+@viewport {
+   width: device-width; 
+   zoom: 1; 
+}
+
+@media (min-width: 992px){
+.container {
+    width: 100%;
+    max-width: 1150PX;
+}
+}
+
+@media (max-width: 680px){
+svg {
+    width: 70px;
+    height: 70px;
+
+}
+}
+
+.todo-list{
+  min-width: 270px;
+}
+
+/* each li with class="item" */
+.item {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.delete-button {
+  cursor: pointer;
+  float: right;
+  border: #fff;
+  margin-left: 10px;
+  font-size: 1.8rem;
+  font-weight: 550;
+  padding-top: 7px;
+}
+
+.checkbox {
+  float: left;
+}
+
+.checked { 
+  text-decoration: line-through;
+}
+
