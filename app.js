@@ -7,7 +7,6 @@ let todos = [];
 todoForm.addEventListener('submit', function(e){
     e.preventDefault();
     addTodo(todoInput.value);
-    console.log(todoInput.value)
 });
 
 function addTodo(item){
